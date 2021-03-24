@@ -51,3 +51,7 @@ def test_payload(pons):
 def test_translate_words(pons):
     words = ['hello', 'world']
     translated_words = pons.translate_words(words)
+
+
+def test_one_character_words(pons):
+    assert pons.translate('I')
